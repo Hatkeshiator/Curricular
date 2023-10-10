@@ -1,0 +1,162 @@
+Types of Operators, Precedence, and Associativity in C.
+
+Varad K. Dixit, 23BBT035. Written 21st September, A.D. 2023
+
+Types of operators in C:
+    In the C programming language there are many operators.
+    These are any symbol or symbols that take one or more
+    variables and operate upon them in some way to evaluate
+    to a new value.
+    There are three aricities of operators in C: Unary, 
+    Binary, and Ternary operators. Aricity refers to how
+    many variables are taken as inputs for an operation.
+
+    Unary operators in C:
+
+    -AddressOf (Also called PointerTo) operator & evaluates
+    to the address of any variable i.e the location in
+    memory where it is stored. For instance, consider the
+    following snippet of C code:
+    {int g = 5;
+    printf("the number %d is at %p in memory", g, &g);}
+    where %p is the format specifier for a memory address.
+
+    -AtAddress (also called Pointer) operator * takes
+    a memory address (or a pointer variable) as input and
+    evaluates to the value stored starting at that memory
+    address. For instance:
+    {int randomnumber = 27;
+    int* randompointer = &randomnumber;
+    printf("%d is stored at %p", *randompointer,
+    randompointer);}
+    Note that if you tried to say, for instance,
+    char hello = (char) *randompointer;
+    you would get a valid char in hello.
+
+    -Increment and decrement (++ and -- respectively) are
+    operators which modify the value of their operand by
+    either adding or subtracting exactly 1 from the same.
+    They can be either pre- or post- in nature, affecting
+    whether they are evaluated before or after the rest of
+    the statement.
+    {
+        int a = 5;
+        a++; //or ++a
+        printf("%d", a); //this will print 6
+    }
+
+    -sizeof(x) takes an input x which is either a variable
+    or a data type and evaluates to the size of the
+    same in bytes. e.g. sizeof(long double) should evaluate
+    to 16.
+
+    -Bitwise NOT or One's Complement of a variable is the
+    bits of that number swapped; one's for zero's and vice
+    versa. It is represented ~a, read "NOT a"
+
+    Binary operators in C:
+
+    These are further categorized into various kinds:
+
+    Arithmetic operators:
+    -Addition is represented by + e.g. a + b
+    -Subtraction is represented by - e.g. a - b
+    -Multiplication is represented by * e.g. a * b
+    -Division is represented by / e.g. a / b
+    -Modular arithmetic can be performed using % (modulo)
+    operator. It can be understood as remainder on division
+
+    Relational operators:
+    -A relational operation evaluates to 1 if the relation
+    holds and 0 otherwise. 
+    -The relation of equality is represented by == e.g.
+    if a = 6; b = 6; then a == b evaluates to 1, or more
+    simply a == b.
+    -The relation of general inequality is represented by
+    !=
+    -"Less than (but not equal to)" is represented by <
+    -"Greater than (but not equal to)" is represented by >
+    -"Less than or equal to" is represented by <=
+    -"Greater than or equal to" is represented by >=
+
+    Logical operators:
+    -Logical AND is represented by && 
+    a && b == 1 iff a AND b != 0
+    -Logical OR is represented by ||
+    a || b == 1 iff a OR b != 0
+    -Logical NOT or complement is represented by prefixed !
+    !a == 1 iff a == 0, but !a == 0 otherwise.
+
+    Assignment operators:
+    Assignment operators first evaluate the entire
+    statement on their right and assign the resulting value
+    to the variable on their left hand side following some
+    sort of pattern.
+    -Simple Assignment operator = assigns RHS directly to
+    variable without modification. e.g. a = b + (c / y)
+    -Compound assignment uses any arithmetic operator to
+    the right of = sign thus appearing as
+    a o= (statement)
+    where that assigns a new value to a by taking the old
+    value of a and performing that operation upon it and
+    the value of statement. For instance:
+    a += 5;
+    means a's value is increased by 5.
+
+    Bitwise operators:
+    These use the binary values of the variables and thus
+    can be called upon any variable at all.
+    -Bitwise and takes the form a&b and evaluates to the
+    binary number that takes each corresponding bit-pair
+    of a and b (leading 0s where necessary) and performs
+    AND on them.
+    -Bitwise or, a|b is the same but it performs OR instead
+    of AND.
+    -Bitwise xor, or a^b, is the same but with XOR.
+
+    Ternary operator in C:
+
+    The ternary operator, ? :, has a special role in C as
+    it can be made to conditionally evaluate to one of two
+    values, statements, functions, etc. It has the syntax:
+    (statement S) ? (value if S != 0) : (value if S = 0).
+
+    It can be used instead of if(){} else{} to save space.
+
+Precedence and associativity of operators in C:
+    Operators are not all evaluated simultaneously. The
+    compiler evaluates the operations on a first pass based
+    on their precedence. Higher precedence means that, if
+    present, a given operator will be evaluated before any
+    others.
+
+    Parentheses are the most important in determining what
+    is executed first. (a + b) * c means exactly what it
+    does on pen and paper.
+
+    However, if parentheses are not included, and a
+    statement such as "a o1 b o2 c" is encountered where
+    o1 and o2 are two operators such that o1 != o2, they
+    will be evaluated in the order:
+
+    1. postfix (e.g a++)
+    2. prefix (e.g. !a, --a, ~a)
+    3. multiplicative (e.g. a * b, b % a, c / d)
+    4. additive (e.g. p - q)
+    5. shift (e.g. y >> 1, z << 2)
+    6. relational (e.g. i >= 9 N.B. not including !=, ==)
+    7. equality and inequality (e.g. a != 12)
+    8. bitwise and
+    9. bitwise xor
+    10. bitwise or
+    11. logical AND
+    12. logical OR
+    13. ternary operator
+    14. assignment operators
+
+    if two operators of equal precedence are encountered,
+    they will be evaluated left to right, except for
+    assignment operators which will be evaluated right to
+    left. That is called associativity: all operators are
+    left-associative except assignment which is right-
+    associative.

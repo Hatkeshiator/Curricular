@@ -1,0 +1,131 @@
+Control Statements in C Programming
+
+Varad K. Dixit, 23BBT035. Written 25th September, A.D. 2023
+
+Control statements:
+    Control statements in C are those statements which
+    allow us to regulate the nature of the execution of 
+    code within a function. These can include statements
+    that conditionally inhibit certain code from being
+    executed, or statements which condionally execute
+    certain code repeatedly. 
+    
+    The most basic control statement is the conditional
+    statement if() .... The satement directly following
+    a statement of the form if(q) will not execute if q = 0
+    but otherwise will execute normally. If, instead of only
+    one statement, we wish to execute multiple lines of
+    code, we can use a code block. Thus, we have a basic
+    syntax:
+        if(condition) statement;
+    or
+        if(codition) {
+            statement1;
+            statement2;
+            ... // can be arbitrarily many statements
+        }
+    
+    There is one more optional component to an if statement
+    which is used to represent the statement or code block
+    to be executed should (condition) evaluate to (0). This
+    is called the else() ... statement. else can be
+    followed directly by if(other condition) to check
+    multiple conditions sequentially. There is a difference
+    to be noted between sequential and nested if statements
+    and if-else if statements.
+        if (percentage >= 35)
+            printf("You have passed with the following: ");
+        // the above line only executes if marks are equal
+        // to or above passing marks
+        else
+            printf("You have failed with the following: ");
+        // the above line executes if marks are less than
+        // passing marks
+
+        if (percentage > 85)
+            printf("Distinction");
+        // since this is a new if statement, the condition
+        // is checked independently of the previous ones
+        else if (percentage > 70) 
+            printf("First class");
+        // this checks its condition only if the first one
+        // was false
+        else if (percentage > 40)
+            printf("Second class");
+        else 
+            printf("Third class");
+    
+    Loops are the other sort of control statement. There
+    are three loops in standard C: for() ..., while() ...,
+    and do ... while();. 
+
+    Looping is when a statement or code block is executed
+    again and again for a finite or infinite amount of
+    iterations. while(condition) statement;, 
+    or, as before, while(condition) {block}, functions a
+    lot like if, in that the code associated with the
+    while statement is executed in full if the condition
+    evaluates to a non-zero value.
+    
+    However, once execution is complete, the while loop
+    returns to the condition and evaluates it again. The
+    while loop therefore can be used to calculate all the
+    powers of two up to a certain value of n (example 
+    below) or any other such application involving repeated
+    execution. An infinite loop can also be created using
+    anything that necessarily evaluates to a non-zero value
+    such as while(1) ...
+    example:
+        n = 1;
+        while(n <= 1050) {
+            n *= 2;
+            printf("%d\n", n);
+        }
+    
+    The while loop evaluates the condition before iterating
+    the loop for all iterations of the loop, but sometimes
+    we need to iterate at least once, then loop if
+    we deem it necessary. For this, instead of a structure
+    like:
+        statement;
+        while(condition)
+            statement;
+    we instead use do-while statement:
+        do
+            statement;
+        while(condition);
+    note the semicolon after the condition.
+    
+    This checks the condition only after running the
+    code within the block or statement associated with the
+    loop, for each iteration. The only difference in terms
+    of the program itself is that a do-while loop runs
+    one time if the condition is false before the first
+    iteration, whereas in this case a while loop will run
+    0 times.
+
+    A for loop is a more streamlined structure for a
+    specific kind of loop. One of the most common use cases
+    for a loop is the fixed-increment loop:
+        quotenumber = 0;
+        while(quotenumber <= 100) {
+            printf("Quote %d. %s\n\n", quotenumber,
+            Quotes[quotenumber]);
+            i++;
+        }
+
+    However, this is unwieldy in terms of a while loop,
+    which is unfortunate due to its surprising frequency.
+    Such a common and useful structure should be easy to
+    write, so the for() loop is defined, which initializes a
+    predeclared variable and alters it each iteration
+    of the loop:
+        for(LV_INIT; CONDITION; LV_INC)
+            statement;
+    where LV_INIT (looping variable initialization) is the
+    statement that gives an initial assignment to the
+    looping variable (often i is used), CONDITION is the
+    condition that is checked at the head of the loop
+    each iteration, and LV_INC is the reassignment to the
+    looping variable at the bottom of each iteration of the
+    loop.
