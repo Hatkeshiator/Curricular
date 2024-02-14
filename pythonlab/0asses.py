@@ -24,4 +24,6 @@
 #       123
 #       ABCD
 #       ... (n)
-# 17.
+# 17. Write a program to read two text files and merge their contents
+# 18. Write a program to create a CSV file and write a table of user-IDs and passwords and read the password corresponding to a given user-ID.
+# 19. 
