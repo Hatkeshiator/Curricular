@@ -24,10 +24,3 @@ def iscolinear(x_1,y_1,x_2,y_2,x_3,y_3):
     if x1tox2 == x2tox3:
         colin_flag = True
     return colin_flag
-
-# define a function that tells us the area of the triangle formed by three points
-
-def triangle_area(x_1,y_1,x_2,y_2,x_3,y_3):
-    # I wrote this while sleep deprived and cannot remember why it le works
-    area = 0.5 * abs((x_1-x_3)*(y_2-y_1) - (x_1-x_2)*(y_3-y_1))
-    return area
