@@ -26,4 +26,10 @@
 #       ... (n)
 # 17. Write a program to read two text files and merge their contents
 # 18. Write a program to create a CSV file and write a table of user-IDs and passwords and read the password corresponding to a given user-ID.
-# 19. 
+# 19. Write a program that counts duplicates in a list
+# 20. Write a program to sum over a list
+# 21. Write a program to replace the vowels in a string with special symbols
+# 22. Write a program to count even and odd elements in a list
+# 23. Write a program to square each element in a list
+# 24. Write a program to remove duplicate elements in a list
+# 25. 
