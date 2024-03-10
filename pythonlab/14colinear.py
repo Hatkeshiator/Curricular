@@ -9,7 +9,7 @@ def riorun(x_1, y_1, x_2, y_2): # "RIse Over RUN"
     numerator = y_2 - y_1
     denominator = x_2 - x_1
     numerator, denominator = abs(numerator), abs(denominator)
-    try:
+    try: 
         result = numerator / denominator
     except ZeroDivisionError:
         result = 'vert' # vertical, since y changes but x remains constant

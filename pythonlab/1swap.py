@@ -1,5 +1,4 @@
-# Write a program that asks input of two numbers from user, assigns them to
-# two different variables, swaps the variables, and then prints them.
+# Write a program that asks input of two numbers from user, assigns them to two different variables, swaps the variables, and then prints them.
 
 num1 = int(input("First number: "))
 num2 = int(input("Second number: "))

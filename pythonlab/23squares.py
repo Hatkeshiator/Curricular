@@ -1,3 +1,5 @@
+# Write a function that takes a list of numbers and returns a new list with the square of each number. Write a list comprehension that does the same thing.
+
 def squareeach(l):
     result = []
     for x in range(len(l)):

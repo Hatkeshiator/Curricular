@@ -1,3 +1,6 @@
+# Write a program to replace vowels in a string with special symbols of your choice
+# (I chose 4, 3, 1, 0, 9 for a, e, i, o, u respectively)
+
 def vowelreplace(inst):
     myst = ""
     for char in inst:

@@ -1,3 +1,5 @@
+# Write a program that counts the number of duplicate elements in a list.
+
 # adds one to duplicate count for every *repeated* occurence of an element
 def duplicount(l):
     duplicates = 0

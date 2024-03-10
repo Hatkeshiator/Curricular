@@ -1,7 +1,5 @@
 # Write a program that checks if a number is an armstrong number or not.
-# Definition of an Armstrong number is one whose value is equal to the
-# sum of its digits, each raised to the mth power, where m is the number
-# of digits in the number.
+# An Armstrong number is one whose value is equal to the sum of its digits, each raised to the mth power, where m is the number of digits in the number.
 
 def armstrong(number):
     result = 0

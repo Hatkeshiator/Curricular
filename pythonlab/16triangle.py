@@ -18,7 +18,7 @@ def letline(x):
     print("ABCDEFGHIJKLMNOPQRSTUVWXYZ"[:letters%26])
 
 def my_tri(lines):
-    string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    #string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     i = 1
     for x in range(lines):
         if x % 2 == 0:

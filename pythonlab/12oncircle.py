@@ -23,18 +23,19 @@ def newoncircle(x,y,r):
         l = "on"
     print("The point lies", l, "the circle")
 
-# optional: in n dimensions
+# optional: in arbitrary dimensions
 
 def On_Circle(p,c,r):
-    #p = [point_x, point_y]
-    #c = [center_x, center_y]
+    #p = [point_x, point_y, ...]
+    #c = [center_x, center_y, ...]
     #r = radius
-    dimensions = len(p)
+    p_1 = p.copy()
+    dimensions = len(p_1)
     sumofsqrs = 0
     # compute each delta(x) and square it
     for d in range(dimensions):
-        p[d] -= c[d]
-        sumofsqrs += p[d] ** 2
+        p_1[d] -= c[d]
+        sumofsqrs += p_1[d] ** 2
 
     distance = sqrt(sumofsqrs)
     if distance > r:

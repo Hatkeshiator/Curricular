@@ -12,7 +12,7 @@ def towers(n, fr, to, spare):
         towers(n-1,fr,spare,to)
         towers(1,fr,to,spare)
         towers(n-1,spare,to,fr)
-    return #note that the value returned here is None
+    return # note that the value returned here is None
 
 # Copy the improved towers of Hanoi algorithm
 
