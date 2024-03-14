@@ -15,3 +15,6 @@ def primesto(num):
         if isprime(x):
             result.append(x)
     return result
+
+def primesto_(x):
+    return [k for k in range(x+1) if isprime(k)]

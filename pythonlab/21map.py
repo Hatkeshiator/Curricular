@@ -18,6 +18,17 @@ def vowelreplace(inst):
             myst += char
     print(myst)
 
+def vowelreplace_(inst):
+    ref1 = "AEIOUaeiou"
+    ref2 = "4310943109"
+    myst = ""
+    for char in inst:
+        if char in ref1:
+            myst += ref2[ref1.index(char)]
+        else:
+            myst += char
+    print(myst)
+
 
 # better approach using map() (not yet taught(?))
 def vowelmap(inst):
@@ -34,6 +45,19 @@ def vowelmap(inst):
         elif char == 'u' or char == 'U':
             result = '9'
         return result
+    myst = map(repl, inst)
+    myst = list(myst)
+    myst = ''.join(myst)
+    return myst
+
+def vowelmap_(inst):
+    ref1 = "AEIOUaeiou"
+    ref2 = "4310943109"
+    def repl(char):
+        if char in ref1:
+            return ref2[ref1.index(char)]
+        else:
+            return char
     myst = map(repl, inst)
     myst = list(myst)
     myst = ''.join(myst)

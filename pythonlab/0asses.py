@@ -37,9 +37,9 @@
 # 23. Write a program to square each element in a list [done]
 # 24. Write a program to remove duplicate elements in a list [done]
 # 25. Write a program to remove multiple elements from a list [done]
-# 26. Write a program to take a list as input and return a dictionary containing key-value pairs of {key_a: [a1, a2 ,a3, ... an], key_b: [b1, b2, b3 ... bm]} for n instances of the value key_a in original list, and m instances of key_b. [done] [NOTE: dictionaries are not yet covered]
+# 26. Write a program to take a list as input and return a dictionary containing key-value pairs of {key_a: [a1, a2 ,a3, ... an], key_b: [b1, b2, b3 ... bm]} for n instances of the value key_a in original list, and m instances of key_b. [done]
 # 27. Write a program that takes two lists as inputs and returns the boolean value of ∃(a | a ∈ l1 ∧ a ∈ l2) [done]
 # 28. Write a program that prints the input list after removing the elements at indices 0, 2, 4, and 5 [done]
-# 29. Write a python script to concatenate the dictionaries {1:10,2:20} {3:30,4:40} {5:50,6:60} to create a new dictionary [done] [NOTE: dictionaries are not yet covered]
-# 30. Write a program to sort a tuple of tuples by the *second* item of those tuples. [done] [NOTE: tuples are not yet covered]
+# 29. Write a python script to concatenate the dictionaries {1:10,2:20} {3:30,4:40} {5:50,6:60} to create a new dictionary [done]
+# 30. Write a program to sort a tuple of tuples by the *second* item of those tuples. [done]
 # 31. 
