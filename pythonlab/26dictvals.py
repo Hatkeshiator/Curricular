@@ -11,3 +11,10 @@ def dictvals(l):
         else:
             d[i].append(i)
     return d
+
+# alternate implementation
+def dictvals_(l):
+    d = {}
+    for ele in l:
+        d[ele] = l.count(ele)
+    return d
