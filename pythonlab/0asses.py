@@ -17,7 +17,7 @@
 # 9.1 Write a program to check if a number is palindromic [done]
 # 9.2 Write a program to check if a string is palindromic [done]
 # 10. Write a program to check scope of a function [done]
-# 11. Write a program to implement a towers of Hanoi algorithm [done] 
+# 11. Write a program to implement a towers of Hanoi algorithm [done]
 # 12. Write a program to find if a point at given set of x,y coordinates lies on a circle of radius r centered at the origin.  [done]
 # 13. Write a program to compute the area of a circle of a given radius, using the math module [done]
 # 14. Write a program to check if three given points are colinear [done]
@@ -47,4 +47,4 @@
 # 33. Write a program to extract the columns ('name', 'date', 'time', 'shares', 'price') from a CSV file. [done]
 # 34. Write a program to copy a given text file using built in file handling methods. [done]
 # 35. Write a program to create a CSV file containing the columns ('alphabet', 'count') and generate a random count for each alphabet (a-z). Later, generate a histogram plotting character frequency. [done]
-# 36. 
+# 36.
