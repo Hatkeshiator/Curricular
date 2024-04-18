@@ -12,7 +12,7 @@ def matmul(a,b):
 
     result = [[0 for x in range(c2)] for x in range(r1)]
 
-    print(result)
+    # print(result)
 
     for i in range(r1):
         for j in range(c2):

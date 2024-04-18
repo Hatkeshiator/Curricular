@@ -3,10 +3,10 @@
 
 def ispal(number):
     temp = number
-    result = 0
+    result = 0 
     while temp > 0:
         #print(temp, number, result)
-        result *= 10
+        result *= 10 
         result += temp % 10
         temp //= 10
     #print(temp, number, result)

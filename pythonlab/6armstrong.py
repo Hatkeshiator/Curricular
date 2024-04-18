@@ -8,9 +8,8 @@ def armstrong(number):
     for x in numberstring:
         result += int(x) ** len(numberstring)
     # is result the same as our initial number?
-    final_result = result == number and number != 0 # 0 is not considered an armstrong number (by the OEIS), even though 0^1 = 0.
+    final_result = (result == number) and (number != 0) # 0 is not considered an armstrong number (by the OEIS), even though 0^1 = 0.
     return final_result
-
 # optional: write an algorithm that checks numbers up to a desired value
 
 def interesting(ran):
