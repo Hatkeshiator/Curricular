@@ -1,3 +1,4 @@
+# Assignment 12
 # Write a program to compute whether a given point is on a given circle or not
 
 def oncircle(x,y,r):
@@ -25,7 +26,7 @@ def newoncircle(x,y,r):
 
 # optional: in arbitrary dimensions
 
-def On_Circle(p,c,r):
+def On_Circle(p: list[int], c: list[int], r: int):
     #p = [point_x, point_y, ...]
     #c = [center_x, center_y, ...]
     #r = radius
@@ -46,3 +47,6 @@ def On_Circle(p,c,r):
         l = 'on'
     print("The point lies", l, "the circle")
     return
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\nUse the function On_Circle() for an arbitrary-dimensional circle, on ")

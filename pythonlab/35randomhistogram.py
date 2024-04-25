@@ -1,3 +1,4 @@
+# Assignment 35
 # Write a program to generate a CSV file that has one column containing each alphabet, and one column containing a random integer. The headings of these columns should be alphabet and count respectively.  Also plot a histogram over the alphabets that represents the count of each.
 
 import csv
@@ -35,3 +36,12 @@ def plotgraph():
     plt.ylabel('Count')
     plt.grid(axis='y')
     plt.show()
+
+def main():
+    seed = input("Enter the seed for the random number generator: ")
+    makecsv(seed)
+    plotgraph()
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

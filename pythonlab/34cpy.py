@@ -1,3 +1,4 @@
+# Assignment 34
 # Write a program to copy one file into another using file handling methods
 
 def copy_file(a, b = "copy.txt"):
@@ -8,11 +9,16 @@ def copy_file(a, b = "copy.txt"):
 
     return True
 
-a = input("Write complete path to the file you want to copy ")
+def main():
+    a = input("Write complete path to the file you want to copy ")
 
-copy_file(a)
+    copy_file(a)
 
-with open('copy.txt', 'r') as file:
-    print(file.read())
+    with open('copy.txt', 'r') as file:
+        print(file.read())
 
-print("done")
+    print("done")
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

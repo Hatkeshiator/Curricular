@@ -1,3 +1,4 @@
+# Assignment 11
 # copy the Towers of Hanoi algorithm given below
 
 def print_move(fr, to):
@@ -23,3 +24,13 @@ def Towers(n,fr,to,spare):
     Towers(n-1,fr,spare,to)
     print_move(fr,to)
     Towers(n-1,spare,to,fr)
+
+def main():
+    n = int(input("Enter your number here: "))
+    print("Assume the pole the stack currently is called 'start', and the other two are called 'end' and 'spare'. To move the stack from 'start' to 'end', do the following:")
+    Towers(n, "'start'", "'end'", "'spare'")
+    print("The stack is moved from 'start' to 'end.'")
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

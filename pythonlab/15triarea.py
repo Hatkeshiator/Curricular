@@ -1,3 +1,4 @@
+# Assignment 15
 # Write a program to check the area of a triangle given the cartesian coordinates of its vertices
 
 def triangle_area(x_1,y_1,x_2,y_2,x_3,y_3):
@@ -11,3 +12,6 @@ def triangle_area(x_1,y_1,x_2,y_2,x_3,y_3):
     # and the triangle is, by definition, half of the parallelogram
     area /= 2
     return area
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\nUse the function triangle_area to find the area of a given triangle.")

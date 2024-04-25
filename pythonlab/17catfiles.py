@@ -1,3 +1,4 @@
+# Assignment 17
 # Write a program to read two text files and merge their contents
 
 def initialize_files():
@@ -21,5 +22,10 @@ def merge_files():
     
     return True
 
-initialize_files()
-merge_files()
+def main():
+    initialize_files()
+    merge_files()
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

@@ -1,4 +1,5 @@
-# colinear = lying on the plane such that there exists a line that passes through all points
+# Assignment 14
+# collinear = lying on the plane such that there exists a line that passes through all points
 
 # eqn for a line is y = mx+c
 # or more relevantly, that dy/dx is constant over the graph
@@ -17,10 +18,13 @@ def riorun(x_1, y_1, x_2, y_2): # "RIse Over RUN"
 
 # define a function that tells us if three points are colinear
 
-def iscolinear(x_1,y_1,x_2,y_2,x_3,y_3):
+def iscollinear(x_1,y_1,x_2,y_2,x_3,y_3):
     x1tox2 = riorun(x_1,y_1,x_2,y_2)
     x2tox3 = riorun(x_2,y_2,x_3,y_3)
-    colin_flag = False
+    collin_flag = False
     if x1tox2 == x2tox3:
-        colin_flag = True
-    return colin_flag
+        collin_flag = True
+    return collin_flag
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\nUse the function iscollinear() to find if 3 points are collinear.")

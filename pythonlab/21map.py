@@ -1,3 +1,4 @@
+# Assignment 21
 # Write a program to replace vowels in a string with special symbols of your choice
 # (I chose 4, 3, 1, 0, 9 for a, e, i, o, u respectively)
 
@@ -62,3 +63,11 @@ def vowelmap_(inst):
     myst = list(myst)
     myst = ''.join(myst)
     return myst
+
+def main():
+    s = input("Enter a string to replace the vowels: ")
+    print(vowelmap_(s))
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

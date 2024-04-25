@@ -1,4 +1,6 @@
-# blah blah print a triangle that has alternating lettter and number lines and the letter lines reset and the number ones don't
+# Assignment 16
+# Write a program to print a triangle that has alternating lettter and number lines and the letter lines reset and the number ones don't
+
 # eg
 # 1
 # A B
@@ -29,5 +31,10 @@ def my_tri(lines):
             i += 1
     return
 
-b = int(input("How many lines "))
-my_tri(b)
+def main():
+    b = int(input("How many lines "))
+    my_tri(b)
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

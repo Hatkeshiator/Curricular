@@ -1,4 +1,5 @@
-# Write a program (YOURSELF) to create a CSV file and write a table of USER-IDS and PASSWORDS to it.
+# Assignment 18
+# Write a program to create a CSV file and write a table of USER-IDS and PASSWORDS to it.
 # The program should then read a password from the user and print the corresponding USER-ID if applicable, else throw an appropriate error message.
 
 def initialize_csv():
@@ -24,6 +25,11 @@ def read_csv(p):
     
     return result
 
-initialize_csv()
-password = input('Enter the password: ')
-print(read_csv(password))
+def main():
+    initialize_csv()
+    password = input('Enter the password: ')
+    print(read_csv(password))
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()

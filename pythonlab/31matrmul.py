@@ -1,3 +1,4 @@
+# Assignment 31
 # Write a program to implement matrix multiplication.
 
 def matmul(a,b):
@@ -20,3 +21,6 @@ def matmul(a,b):
                 result[i][j] += a[i][k] * b[k][j]
 
     return result
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\nUse the function matmul() to multiply two matrices.")

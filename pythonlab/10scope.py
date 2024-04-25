@@ -1,4 +1,5 @@
-# Write a program to check the scope of a function
+# Assignment 10
+# Write a program to understand the scope of a function
 
 def g(x):
     def h():
@@ -12,6 +13,11 @@ def g(x):
     # this is called scope
     return x
 
-x = int(input('what is x '))
-z = g(x)
-print(z)
+def main():
+    x = int(input('what is x '))
+    z = g(x)
+    print(z)
+
+if __name__ == '__main__':
+    print("Written by Varad Kinjal Dixit, 23BBT035\n")
+    main()
